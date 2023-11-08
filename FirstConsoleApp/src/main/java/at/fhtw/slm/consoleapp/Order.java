@@ -1,6 +1,10 @@
 package at.fhtw.slm.consoleapp;
 
+
+import lombok.Getter;
+
 public class Order {
+    @Getter
     private int id;
     private String description;
     private int amount;
@@ -13,9 +17,6 @@ public class Order {
         this.price = price;
     }
 
-    public int getId() {
-        return id;
-    }
 
     public void setId(int id) {
         this.id = id;
