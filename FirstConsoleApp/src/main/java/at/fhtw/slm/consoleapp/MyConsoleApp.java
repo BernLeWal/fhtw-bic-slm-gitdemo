@@ -6,6 +6,8 @@ public class MyConsoleApp {
 
         User user = new User(1, "Rudi", "Ratlos");
         System.out.println(user.getId());
+        System.out.println(user);
         var user2 = new User(2, "Susi", "Sorglos");
+        System.out.println(user2);
     }
 }
