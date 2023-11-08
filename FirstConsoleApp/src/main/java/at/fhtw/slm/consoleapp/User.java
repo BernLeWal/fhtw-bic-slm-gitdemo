@@ -1,29 +1,18 @@
 package at.fhtw.slm.consoleapp;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@ToString
+@AllArgsConstructor
 public class User {
+    @Getter
     private int id;
+    @Getter
     private String login;
-    private String passwordHash;
-
-    public User(int id, String login, String passwordHash) {
-        this.id = id;
-        this.login = login;
-        this.passwordHash = passwordHash;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public String getPasswordHash() {
-        return passwordHash;
-    }
-
-    public void setPasswordHash(String passwordHash) {
-        this.passwordHash = passwordHash;
-    }
+    @Getter @Setter
+    private String passwordHash;    //aslkdöfjcasöldfajlödfjaöldfjaslöfjq2poweijqopwefjawölkfgawlöjfalöwksjföalskd
 }
