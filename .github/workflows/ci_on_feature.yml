@@ -10,9 +10,9 @@ name: Java CI with Maven on feature branches
 
 on:
   push:
-    branches: [ "f" ]
+    branches: [ "feature*" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "feature*" ]
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file FirstConsoleApp/pom.xml
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.3
       with:
