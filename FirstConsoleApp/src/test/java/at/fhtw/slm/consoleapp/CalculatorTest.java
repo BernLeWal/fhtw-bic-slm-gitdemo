@@ -53,4 +53,10 @@ class CalculatorTest {
         assertEquals( -3, calc.add(Integer.MAX_VALUE, Integer.MAX_VALUE));
         assertEquals( -1, calc.add(Integer.MIN_VALUE, Integer.MIN_VALUE));
     }
+
+    @Test
+    void div() {
+        assertEquals( 2, calc.div(2, 1)  );
+        assertEquals( 2, calc.div(4, 2) );
+    }
 }
