@@ -58,5 +58,6 @@ class CalculatorTest {
     void div() {
         assertEquals( 2, calc.div(2, 1)  );
         assertEquals( 2, calc.div(4, 2) );
+        assertEquals( 4, calc.div( 8,2) );
     }
 }
