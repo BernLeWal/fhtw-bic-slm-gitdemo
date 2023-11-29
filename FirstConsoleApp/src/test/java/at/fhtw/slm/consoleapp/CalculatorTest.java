@@ -20,7 +20,6 @@ class CalculatorTest {
         // Arrange
         int a = 1;
         int b = 2;
-        int expectedResult = 3;
 
         // Act
         var actualResult = calc.add(1,2);
@@ -36,7 +35,6 @@ class CalculatorTest {
         // Arrange
         int a = -1;
         int b = -2;
-        int expectedResult = -3;
 
         // Act
         var actualResult = calc.add(a,b);
@@ -50,9 +48,9 @@ class CalculatorTest {
     @Test
     void add_MaximumNumbers() {
         // Act & Assert
-        assertEquals(-1, calc.add(Integer.MAX_VALUE, Integer.MIN_VALUE));
-        assertEquals( -1, calc.add(Integer.MIN_VALUE, Integer.MAX_VALUE));
-        assertEquals( -2, calc.add(Integer.MAX_VALUE, Integer.MAX_VALUE));
-        assertEquals( 0, calc.add(Integer.MIN_VALUE, Integer.MIN_VALUE));
+        assertEquals(-2, calc.add(Integer.MAX_VALUE, Integer.MIN_VALUE));
+        assertEquals( -2, calc.add(Integer.MIN_VALUE, Integer.MAX_VALUE));
+        assertEquals( -3, calc.add(Integer.MAX_VALUE, Integer.MAX_VALUE));
+        assertEquals( -1, calc.add(Integer.MIN_VALUE, Integer.MIN_VALUE));
     }
 }

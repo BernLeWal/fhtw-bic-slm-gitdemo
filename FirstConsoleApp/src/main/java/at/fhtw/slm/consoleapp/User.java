@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @ToString
 @AllArgsConstructor
 public class User {
@@ -14,5 +13,5 @@ public class User {
     @Getter
     private String login;
     @Getter @Setter
-    private String passwordHash;    //aslkdöfjcasöldfajlödfjaöldfjaslöfjq2poweijqopwefjawölkfgawlöjfalöwksjföalskd
+    private String passwordHash;
 }
